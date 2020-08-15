@@ -1,0 +1,34 @@
+{
+  "name": "ciriusengineering",
+  "version": "1.0.0",
+  "description": "Cirius Engineering Consultancy Firm Website",
+  "main": "index.js",
+  "author": "Klaven Jones",
+  "scripts": {
+    "css:scss": "node-sass --output-style compressed -o dist src/scss",
+    "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
+    "css:lint": "stylelint src/scss/*.scss --syntax scss || true",
+    "build:css": "yarn css:lint && yarn css:scss && yarn css:autoprefixer",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
+    "watch": "run-p serve watch:*",
+    "watch:css": "onchange \"src/scss\" -- yarn build:css",
+    "build:images": "imagemin src/images/**/* --out-dir=dist/images",
+    "watch:images": "onchange \"src/images\" -- yarn build:images",
+    "build": "run-p build:*"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "imagemin-cli": "^6.0.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "postcss-cli": "^7.1.1",
+    "stylelint": "^13.6.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
