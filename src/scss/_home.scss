@@ -1,0 +1,65 @@
+header {
+  height: 100vh;
+  background-image: url("../images/header-image__home.jpg");
+  background-position: center;
+  background-size: cover;
+  color: $tertiary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .nav-custom {
+    height: 100px;
+    background: $transparent;
+    @include media-breakpoint-up(sm) {
+      height: 120px;
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: $tertiary;
+      }
+    }
+  }
+  .jumbotron {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .header-logo {
+      width: 250px;
+      margin-bottom: 35px;
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 40px;
+        width: 300px;
+      }
+      @include media-breakpoint-up(md) {
+        margin-bottom: 40px;
+        width: 400px;
+      }
+    }
+    .btn-custom {
+      background: $primary;
+      width: 120px;
+      color: white;
+      &:hover {
+        background: $primaryHover;
+      }
+      @include media-breakpoint-up(sm) {
+        width: 130px;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 40px;
+  @include media-breakpoint-up(sm) {
+    margin-left: 10px;
+    width: 50px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-left: 20px;
+    width: 60px;
+  }
+}
