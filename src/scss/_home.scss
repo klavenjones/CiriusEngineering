@@ -20,6 +20,9 @@ header {
         color: $tertiary;
       }
     }
+    .navbar-collapse-custom {
+      background: $gunmetal;
+    }
   }
 
   .nav-scrolling {
@@ -34,6 +37,10 @@ header {
         color: $tertiary;
       }
     }
+  }
+
+  .nav-expanded {
+    background: $gunmetal;
   }
 
   .jumbotron {
