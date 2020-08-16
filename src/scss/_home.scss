@@ -15,13 +15,27 @@ header {
     @include media-breakpoint-up(sm) {
       height: 120px;
     }
-
     .navbar-nav {
       .nav-link {
         color: $tertiary;
       }
     }
   }
+
+  .nav-scrolling {
+    height: 70px;
+    background: $gunmetal;
+    transition: all 0.3s;
+    @include media-breakpoint-up(sm) {
+      height: 95px;
+    }
+    .navbar-nav {
+      .nav-link {
+        color: $tertiary;
+      }
+    }
+  }
+
   .jumbotron {
     z-index: 1;
     display: flex;
