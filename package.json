@@ -41,5 +41,9 @@
     "stylelint": "^13.6.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1",
+    "exports-loader": "^1.1.0"
   }
 }

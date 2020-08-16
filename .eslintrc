@@ -15,11 +15,11 @@
     "rules": {
         "semi": [
             "error",
-            "always"
+            "never"
         ],
         "quotes": [
             "error",
-            "double"
+            "single"
         ]
     }
 }
