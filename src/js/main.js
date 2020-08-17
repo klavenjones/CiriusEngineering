@@ -1,8 +1,12 @@
 import 'bootstrap'
-import { scrollFunction, clickFunction } from './modules'
+import { scrollFunction, clickFunction, checkWidth } from './modules'
 
 window.onscroll = function() {
   scrollFunction()
+}
+
+window.onresize = function() {
+  checkWidth()
 }
 
 document.querySelector('.navbar-toggler').onclick = function() {
