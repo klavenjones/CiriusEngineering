@@ -49,11 +49,9 @@ header {
       }
     }
   }
-
   .nav-expanded {
     background: $gunmetal;
   }
-
   .jumbotron {
     z-index: 1;
     display: flex;
@@ -84,7 +82,6 @@ header {
     }
   }
 }
-
 .logo {
   width: 40px;
   @include media-breakpoint-up(sm) {
@@ -96,40 +93,108 @@ header {
     width: 60px;
   }
 }
-
 .about__CTA {
-  padding: 60px 0;
+  padding: 60px 0px;
   color: $secondary;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    padding: 60px 10px;
+    text-align: left;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 60px 40px;
+    text-align: left;
+  }
   .tagline {
     height: 24px;
-    width: 255px;
-    font-size: 16px;
+    width: 100%;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.1px;
     line-height: 24px;
     text-transform: uppercase;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      line-height: 20px;
+    }
   }
   .section__title {
-    height: 96px;
-    width: 445px;
-    font-size: 40px;
+    width: 100%;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.5px;
-    line-height: 48px;
-    margin-bottom: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      max-width: 445px;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 96px;
+      width: 100%;
+      max-width: 445px;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 48px;
+      margin-bottom: 10px;
+    }
   }
 
   .subtitle {
-    height: 72px;
-    width: 445px;
+    width: 100%;
     color: $secondary;
     font-size: 16px;
     letter-spacing: 0.1px;
     line-height: 24px;
     margin: 0;
+    @include media-breakpoint-up(md) {
+      height: 72px;
+      width: 100%;
+      max-width: 445px;
+      color: $secondary;
+      font-size: 16px;
+      letter-spacing: 0.1px;
+      line-height: 20px;
+      margin: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 72px;
+      width: 100%;
+      max-width: 445px;
+      color: $secondary;
+      font-size: 16px;
+      letter-spacing: 0.1px;
+      line-height: 24px;
+      margin: 0;
+    }
+  }
+
+  .btn-custom {
+    background: $primary;
+    width: 120px;
+    color: white;
+    margin-top: 30px;
+    &:hover {
+      background: $primaryHover;
+    }
+    @include media-breakpoint-up(md) {
+      width: 130px;
+    }
   }
 }
-
 .custom-carousel {
   min-height: 384px;
   .carousel-item {
@@ -138,7 +203,6 @@ header {
     }
   }
 }
-
 .carousel-indicators-custom {
   bottom: -8px;
   li {
