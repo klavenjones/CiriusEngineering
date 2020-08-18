@@ -7,16 +7,16 @@
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-display: swap;
   box-sizing: border-box;
 }
 
 body {
   font-size: 1rem;
+  font-family: "Helvetica Neue", sans-serif;
   background-color: $tertiary;
   color: $secondary;
-  min-height: 2000px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

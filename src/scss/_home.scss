@@ -96,3 +96,55 @@ header {
     width: 60px;
   }
 }
+
+.about__CTA {
+  padding: 60px 0;
+  color: $secondary;
+  .tagline {
+    height: 24px;
+    width: 255px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .section__title {
+    height: 96px;
+    width: 445px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    height: 72px;
+    width: 445px;
+    color: $secondary;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
+
+.custom-carousel {
+  min-height: 384px;
+  .carousel-item {
+    img {
+      max-height: 346px;
+    }
+  }
+}
+
+.carousel-indicators-custom {
+  bottom: -8px;
+  li {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: black;
+  }
+}
