@@ -30,7 +30,7 @@ a {
 }
 
 p {
-  margin: 2rem 0;
+  // margin: 1rem 0;
   line-height: 1.4em;
 
   &:last-of-type {
@@ -40,7 +40,7 @@ p {
 
 h1,
 h2 {
-  margin-bottom: 4rem;
+  // margin-bottom: 1rem;
   max-width: 100%;
   line-height: 1.1em;
 }
@@ -71,4 +71,18 @@ h2 {
   width: 100%;
   background-color: $secondary;
   opacity: .46;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/light-1603766_1920.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
