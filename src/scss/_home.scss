@@ -81,6 +81,7 @@ header {
     }
   }
 }
+
 .logo {
   width: 40px;
   @include media-breakpoint-up(sm) {
@@ -92,6 +93,7 @@ header {
     width: 60px;
   }
 }
+
 .about__CTA {
   padding: 60px 0px;
   color: $secondary;
@@ -151,7 +153,6 @@ header {
       margin-bottom: 10px;
     }
   }
-
   .subtitle {
     width: 100%;
     color: $secondary;
@@ -180,7 +181,6 @@ header {
       margin: 0;
     }
   }
-
   .btn-custom {
     background: $primary;
     width: 120px;
@@ -211,7 +211,6 @@ header {
     background-color: black;
   }
 }
-
 .features {
   padding: 60px 0px;
   color: white;
@@ -255,5 +254,137 @@ header {
     height: 100%;
     opacity: .6;
     z-index: -1;
+  }
+}
+
+.portfolio {
+  padding: 65px 0;
+  text-align: center;
+  .portfolio__jumbotron {
+    margin: 0 auto 80px;
+    @include media-breakpoint-up(md) {
+      max-width: 550px;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 650px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 750px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      @include media-breakpoint-up(md) {
+        font-size: 40px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 56px;
+      }
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .featured__work {
+    height: 290px;
+    margin-bottom: 20px;
+    .photo {
+      height: 100%;
+      max-height: 290px;
+      img {
+        height: 100%;
+      }
+      @include media-breakpoint-up(md) {
+        max-height: 550px;
+        margin-bottom: 0;
+      }
+      @include media-breakpoint-up(lg) {
+        max-height: 620px;
+        margin-bottom: 0;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      height: 550px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 620px;
+    }
+  }
+
+  .work {
+    height: 600px;
+    .photo {
+      height: 50%;
+      max-height: 290px;
+      &:nth-child(1) {
+        margin-bottom: 20px;
+      }
+      @include media-breakpoint-up(md) {
+        max-height: 245px;
+        &:nth-child(1) {
+          margin-bottom: 30px;
+        }
+      }
+      @include media-breakpoint-up(lg) {
+        max-height: 295px;
+        &:nth-child(1) {
+          margin-bottom: 30px;
+        }
+      }
+     
+    }
+    @include media-breakpoint-up(md) {
+      height: 520px;
+      .photo {
+        height: 50%;
+        max-height: 295px;
+        &:nth-child(1) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      height: 620px;
+      .photo {
+        height: 50%;
+        max-height: 295px;
+        &:nth-child(1) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .photo {
+    width: 100%;
+    margin: 2px;
+    background: black;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gilead {
+    background-image: url("../images/Gilead.jpg");
+  }
+
+  .stanford-hospital {
+    background-image: url("../images/new-stanford-hospital.jpg");
+  }
+
+  .subway-central {
+    background-image: url("../images/San\ Francisco-Oakland\ Bay\ Bridge\ New\ East\ Span.jpg");
+  }
+
+  .btn-custom {
+    background: $primary;
+    width: 120px;
+    color: white;
+    margin-top: 30px;
+    &:hover {
+      background: $primaryHover;
+    }
+    @include media-breakpoint-up(md) {
+      width: 130px;
+    }
   }
 }
