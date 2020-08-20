@@ -528,7 +528,7 @@ header {
 }
 
 .footer {
-  padding: 70px 0 60px;
+  padding: 70px 0 0px;
   .footer__logo {
     width: 150px;
     margin: 0 0 15px;
@@ -576,5 +576,18 @@ header {
     @include media-breakpoint-up(md) {
       text-align: right;
     }
+  }
+}
+
+.footer__lower {
+  opacity: .4;
+  height: 60px;
+  margin-top: 70px;
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 12px;
   }
 }
