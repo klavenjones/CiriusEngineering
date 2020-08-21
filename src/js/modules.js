@@ -11,6 +11,24 @@ export const scrollFunction = () => {
   }
 }
 
+export const rotateFunctionHistory = () => {
+  document
+    .querySelector('#history .about-cirius__chevron')
+    .classList.toggle('about-cirius__chevron-up')
+}
+
+export const rotateFunctionMission = () => {
+  document
+    .querySelector('#mission .about-cirius__chevron')
+    .classList.toggle('about-cirius__chevron-up')
+}
+
+export const rotateFunctionVision = () => {
+  document
+    .querySelector('#vision .about-cirius__chevron')
+    .classList.toggle('about-cirius__chevron-up')
+}
+
 export const clickFunction = () => {
   document.querySelector('#nav').classList.toggle('nav-expanded')
 }

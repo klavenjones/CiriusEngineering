@@ -1,0 +1,76 @@
+.header__pages {
+  height: 70vh;
+  background-image: url("../images/pexels-joy-singh-2764942.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .jumbotron__about {
+    z-index: 10;
+  }
+}
+
+.about-cirius {
+  padding: 70px 0;
+  .about-cirius__image {
+    width: 100%;
+    max-width: 506px;
+    max-height: 290px;
+    @include media-breakpoint-up(md) {
+       max-height: 530px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .about__title {
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      margin: 30px 0 40px;
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        margin: 0 0 30px;
+        text-align: left;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 32px;
+      }
+    }
+  }
+  .accordian {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(143, 143, 143, 0.125);
+    .about-cirius__toggle {
+      //   border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        @include media-breakpoint-up(md) {
+          font-size: 18px;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 24px;
+        }
+        a {
+          text-decoration: none;
+          color: $secondary;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+      .about-cirius__chevron {
+        color: $primary;
+      }
+      .about-cirius__chevron-up {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
