@@ -1,0 +1,83 @@
+.service-intro {
+  padding: 85px 0;
+  .service-intro__title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      margin: 0;
+      justify-content: start;
+      text-align: start;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      @include media-breakpoint-up(md) {
+        font-size: 28px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 32px;
+      }
+    }
+  }
+  .service-intro__description {
+    width: 100%;
+    padding: 0 10px;
+    p {
+      max-width: 540px;
+    }
+  }
+}
+
+.service-entries {
+  position: relative;
+  color: $tertiary;
+  padding: 150px 0;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .65;
+    z-index: -1;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("../images/blueprint_3.jpg");
+    z-index: -2;
+  }
+}
+
+.service-entry {
+  margin: 0 0 40px;
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+  }
+  .service-entry__image {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 255px;
+      object-fit: cover;
+      height: 144px;
+      margin: 0 auto;
+    }
+  }
+  .service-entry__description {
+    text-align: center;
+    margin: 10px 0 0;
+    h3 {
+      font-size: 18px;
+      margin: 0 0 8px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

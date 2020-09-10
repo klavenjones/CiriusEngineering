@@ -45,26 +45,6 @@ h2 {
   line-height: 1.1em;
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  h1 {
-    text-align: center;
-  }
-}
-
-.full-sized {
-  height: 100vh;
-  width: 100%;
-
-  img {
-    max-width: 200px;
-  }
-}
-
 .overlay {
   position: absolute;
   height: 100%;
@@ -74,8 +54,6 @@ h2 {
 }
 
 .parallax {
-  /* The image used */
-  background-image: url("../images/light-1603766_1920.jpg");
   position: absolute;
   top: 0;
   left: 0;

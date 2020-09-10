@@ -1,11 +1,14 @@
 .header__pages {
   height: 70vh;
-  background-image: url("../images/pexels-joy-singh-2764942.jpg");
+  background-image: url("../images/lights_2.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
   .jumbotron__about {
     z-index: 10;
+  }
+  .overlay {
+    height: 100%;
   }
 }
 
@@ -13,14 +16,15 @@
   padding: 70px 0;
   .about-cirius__image {
     width: 100%;
+    height: 100%;
     max-width: 506px;
     max-height: 290px;
     @include media-breakpoint-up(md) {
-       max-height: 530px;
+      max-height: 530px;
     }
     img {
       width: 100%;
-      height: 100%;
+      max-height: 540px;
       object-fit: cover;
     }
   }
@@ -51,6 +55,7 @@
       h3 {
         font-size: 16px;
         font-weight: 700;
+        width: 100%;
         @include media-breakpoint-up(md) {
           font-size: 18px;
         }
@@ -59,6 +64,8 @@
         }
         a {
           text-decoration: none;
+          display: block;
+          width: 100%;
           color: $secondary;
           &:hover {
             color: $primary;
@@ -70,6 +77,108 @@
       }
       .about-cirius__chevron-up {
         transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.about-expertise {
+  //   background: black;
+  position: relative;
+  color: $tertiary;
+  padding: 150px 0;
+  z-index: -100;
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 65px;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      font-size: 28px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+    }
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 255px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    z-index: 2;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    .icon {
+      margin: 0 auto;
+      font-size: 30px;
+      color: $primary;
+      @include media-breakpoint-up(md) {
+        margin: 0;
+      }
+    }
+    h5 {
+      font-size: 16px;
+      margin: 5px 0 8px;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .65;
+    z-index: -1;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("../images/blueprint_3.jpg");
+    z-index: -2;
+  }
+}
+
+.about-ceo {
+  padding: 100px 0;
+  .about-ceo__image {
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+  .about-ceo__bio {
+    padding: 30px 0;
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      margin: 50px 0 40px;
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        margin: 0 0 30px;
+        text-align: left;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 32px;
+      }
+    }
+    .about-ceo__description {
+      padding: 0 10px;
+      max-width: 500px;
+      @include media-breakpoint-up(md) {
+        padding: 0;
       }
     }
   }

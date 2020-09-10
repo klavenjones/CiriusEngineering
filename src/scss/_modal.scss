@@ -1,0 +1,52 @@
+.modal-body__content,
+.modal__image {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modal__image {
+  max-height: 540px;
+}
+
+.modal-body__content {
+  margin-top: 50px;
+  text-align: center;
+  //   border: 2px solid black;
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 40px;
+    @include media-breakpoint-up(md) {
+      font-size: 28px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+    }
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 18px;
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+    }
+  }
+  p {
+    font-size: 12px;
+    margin: 0 0 18px;
+    line-height: 28px;
+    @include media-breakpoint-up(md) {
+      font-size: 14px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+    }
+  }
+}

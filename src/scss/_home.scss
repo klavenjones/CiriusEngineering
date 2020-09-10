@@ -80,6 +80,9 @@ header {
       }
     }
   }
+  .overlay {
+    height: 100vh;
+  }
 }
 
 .logo {
@@ -109,6 +112,20 @@ header {
   @include media-breakpoint-up(md) {
     padding: 60px 40px;
     text-align: left;
+  }
+  .about__photo {
+    margin: 0 0 30px;
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0 0 35px;
+      @include media-breakpoint-up(md) {
+        margin: 0;
+      }
+    }
   }
   .tagline {
     height: 24px;
@@ -159,33 +176,34 @@ header {
     font-size: 16px;
     letter-spacing: 0.1px;
     line-height: 24px;
-    margin: 0;
+    padding: 0 20px;
+    margin: 0 0 10px;
+    @include media-breakpoint-up(sm) {
+      padding-left: 0;
+    }
     @include media-breakpoint-up(md) {
-      height: 72px;
       width: 100%;
-      max-width: 445px;
+      padding-right: 40px;
       color: $secondary;
       font-size: 16px;
       letter-spacing: 0.1px;
       line-height: 20px;
-      margin: 0;
     }
     @include media-breakpoint-up(lg) {
-      height: 72px;
       width: 100%;
-      max-width: 445px;
+      padding-right: 40px;
+      // max-width: 445px;
       color: $secondary;
       font-size: 16px;
       letter-spacing: 0.1px;
       line-height: 24px;
-      margin: 0;
     }
   }
   .btn-custom {
     background: $primary;
     width: 120px;
     color: white;
-    margin-top: 30px;
+    margin-top: 10px;
     &:hover {
       background: $primaryHover;
     }
@@ -196,14 +214,18 @@ header {
 }
 .custom-carousel {
   min-height: 384px;
+  margin: 0 0 30px;
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
   .carousel-item {
     img {
-      max-height: 346px;
+      max-height: 360px;
     }
   }
 }
 .carousel-indicators-custom {
-  bottom: -8px;
+  bottom: -30px;
   li {
     width: 6px;
     height: 6px;
@@ -217,6 +239,12 @@ header {
   color: white;
   position: relative;
   z-index: -100;
+  .features__jumbotron {
+    h1 {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+  }
   .feature {
     display: flex;
     flex-direction: column;
@@ -226,16 +254,16 @@ header {
     margin-bottom: 40px;
     z-index: 2;
     @include media-breakpoint-up(md) {
-      text-align: left;
+      text-align: center;
       margin-bottom: 0;
     }
     .icon {
-      margin: 0 auto;
+      margin: 0 auto 10px;
       font-size: 30px;
       color: $primary;
-      @include media-breakpoint-up(md) {
-        margin: 0;
-      }
+      // @include media-breakpoint-up(md) {
+      //   margin: 0;
+      // }
     }
     h5 {
       font-size: 16px;
@@ -254,6 +282,11 @@ header {
     height: 100%;
     opacity: .6;
     z-index: -1;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("../images/header-image__home.jpg");
+    z-index: -2;
   }
 }
 
@@ -278,7 +311,7 @@ header {
         font-size: 40px;
       }
       @include media-breakpoint-up(lg) {
-        font-size: 56px;
+        font-size: 48px;
       }
     }
     h2 {
@@ -466,7 +499,7 @@ header {
     img {
       max-width: 100px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       @include media-breakpoint-up(md) {
         margin: 0;
       }
@@ -495,7 +528,7 @@ header {
     h2 {
       font-size: 26px;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       @include media-breakpoint-up(md) {
         font-size: 28px;
       }
@@ -524,70 +557,5 @@ header {
         background: $primaryHover;
       }
     }
-  }
-}
-
-.footer {
-  padding: 70px 0 0px;
-  .footer__logo {
-    width: 150px;
-    margin: 0 0 15px;
-    img {
-      width: 100%;
-    }
-  }
-  .footer__caption {
-    margin-bottom: 30px;
-    @include media-breakpoint-up(md) {
-      margin: 0;
-    }
-    p {
-      max-width: 600px;
-      font-size: 16px;
-      font-weight: 500;
-      @include media-breakpoint-up(md) {
-        font-size: 18px;
-      }
-      @include media-breakpoint-up(lg) {
-        font-size: 24px;
-      }
-    }
-  }
-  ul {
-    text-align: left;
-    color: $primary;
-    margin-bottom: 30px;
-    @include media-breakpoint-up(md) {
-      text-align: right;
-      margin: 0;
-    }
-    .nav-item {
-      a {
-        color: $secondary;
-        padding: .3rem 0rem;
-        &:hover {
-          color: $primaryHover;
-        }
-      }
-    }
-  }
-  #address {
-    text-align: left;
-    @include media-breakpoint-up(md) {
-      text-align: right;
-    }
-  }
-}
-
-.footer__lower {
-  opacity: .4;
-  height: 60px;
-  margin-top: 70px;
-  border-top: 1px solid rgba(0, 0, 0, .2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    font-size: 12px;
   }
 }
