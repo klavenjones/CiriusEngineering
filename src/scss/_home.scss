@@ -245,6 +245,12 @@ header {
       margin-bottom: 60px;
     }
   }
+  .features__row {
+    margin-bottom: 40px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 20px;
+    }
+  }
   .feature {
     display: flex;
     flex-direction: column;
@@ -255,7 +261,6 @@ header {
     z-index: 2;
     @include media-breakpoint-up(md) {
       text-align: center;
-      margin-bottom: 0;
     }
     .icon {
       margin: 0 auto 10px;
