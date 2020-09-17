@@ -1,0 +1,56 @@
+@mixin headlineBorder {
+  padding: 0 0 30px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    background: $primary;
+  }
+}
+
+@mixin serviceBorder {
+  position: relative;
+  padding: 40px;
+
+  &:hover::after {
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover::before {
+    height: 100%;
+    width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid $primary;
+    border-right: 1px solid $primary;
+    transition: all 0.3s ease 0s;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    border-top: 1px solid $primary;
+    border-left: 1px solid $primary;
+    transition: all 0.3s ease 0s;
+  }
+}
