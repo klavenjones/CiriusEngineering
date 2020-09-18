@@ -37,8 +37,8 @@
     height: 40px;
     bottom: 0;
     right: 0;
-    border-bottom: 1px solid $primary;
-    border-right: 1px solid $primary;
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
     transition: all 0.3s ease 0s;
   }
   &::after {
@@ -49,8 +49,8 @@
     height: 40px;
     top: 0;
     left: 0;
-    border-top: 1px solid $primary;
-    border-left: 1px solid $primary;
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
     transition: all 0.3s ease 0s;
   }
 }
