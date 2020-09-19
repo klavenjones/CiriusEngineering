@@ -15,6 +15,20 @@
   }
 }
 
+@mixin headlineBorderStart {
+  padding: 0 0 30px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    background: $primary;
+  }
+}
+
 @mixin serviceBorder {
   position: relative;
   padding: 40px;
